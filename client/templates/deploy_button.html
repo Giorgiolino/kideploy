@@ -1,0 +1,10 @@
+<template name="deployButton">
+	{{#with currentUser}}
+		{{#if currentUser}}		
+       			<button class="action trigger-deploy-start" title="Notifier un deploy"></button>
+		{{else}}
+			<p>Veuillez vous connecter pour pouvoir lancer un deploy.</p>
+		{{/if}}
+	{{/with}}
+</template>
+

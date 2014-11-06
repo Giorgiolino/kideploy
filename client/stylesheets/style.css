@@ -1,0 +1,127 @@
+.action {
+	cusrsor:pointer;	
+}/* CSS declarations go here */
+
+#main {
+	text-align:center;
+}
+
+button {
+	font-size: 18px;
+	border: 2px solid #AD235E;
+	border-radius: 100px;
+	width: 150px;
+	height: 150px;
+	background-position:center;
+}
+
+.deploy.start {
+	background-color: green;
+}
+
+.deploy.stop {
+	background-color:red;
+}
+
+.trigger-deploy-stop {
+	background-image : url("/images/button_red.png");
+	background-repeat:no-repeat;
+}
+
+.deploy-running {
+
+}
+
+.trigger-deploy-start {
+	background-image: url("/images/button_green.png");
+	background-repeat:no-repeat;
+}
+
+.main, .deploy {
+    background: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    background: #eee;
+    color: #666666;
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+.navbar .navbar-inner {
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 3px 3px;
+    -ms-border-radius: 0px 0px 3px 3px;
+    -o-border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+#spinner {
+    height: 300px;
+}
+
+.deploy {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+    *zoom: 1;
+    position: relative;
+    opacity: 1;
+}
+
+.deploy:before, .deploy:after {
+    content: "";
+    display: table;
+}
+
+.deploy:after {
+    clear: both;
+}
+
+.deploy.invisible {
+    opacity: 0;
+}
+
+.deploy .deploy-content {
+    float: left;
+}
+
+.deploy .deploy-content h3 {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.deploy .deploy-content h3 a {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.deploy .deploy-content h3 span {
+    font-weight: normal;
+    font-size: 14px;
+    display: inline-block;
+    color: #aaaaaa;
+}
+
+.dropdown-menu span {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    line-height: 20px;
+    color: #bbb;
+    white-space: nowrap;
+}
+
+
