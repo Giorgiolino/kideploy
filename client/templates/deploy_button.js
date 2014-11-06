@@ -8,6 +8,7 @@
 		me.addClass('trigger-deploy-stop');
 		me.removeClass('trigger-deploy-start');
 		me.html('STOP');
+		Deploys.insert({type : "start", createdAt: new Date(), actor : Meteor.user()});
 		
 	} else {
 		return false;
@@ -22,6 +23,7 @@
                 me.addClass('trigger-deploy-start');
                 me.removeClass('trigger-deploy-stop');
                 me.html('START');
+		Deploys.insert({type : "stop", createdAt: new Date(), actor : Meteor.user()});
 
         } else {
                 return false;
