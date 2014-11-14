@@ -16,11 +16,13 @@ button {
 }
 
 .deploy.start {
-	background-color: green;
+    background-color: #5cb85c;
+    border-color: #d6e9c6;
 }
 
 .deploy.stop {
-	background-color:red;
+    background-color: #d9534f;
+    border-color: #ebccd1;
 }
 
 .trigger-deploy-stop {
@@ -72,12 +74,17 @@ body {
     height: 300px;
 }
 
+.row {
+    margin-bottom: 10px;
+}
+
 .deploy {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
     *zoom: 1;
     position: relative;
     opacity: 1;
+    border: 1px solid;
 }
 
 .deploy:before, .deploy:after {
@@ -101,6 +108,7 @@ body {
     margin: 0;
     line-height: 1.4;
     font-size: 18px;
+    color: #fff;
 }
 
 .deploy .deploy-content h3 a {
@@ -112,7 +120,15 @@ body {
     font-weight: normal;
     font-size: 14px;
     display: inline-block;
-    color: #aaaaaa;
+    color: #ddd;
+}
+
+.deploy.start .deploy-content h3 span {
+    color: #2b542c;
+}
+
+.deploy.stop .deploy-content h3 span {
+    color: #843534;
 }
 
 .dropdown-menu span {
