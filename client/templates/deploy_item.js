@@ -1,3 +1,5 @@
+var now = new Blaze.ReactiveVar(new Date());
+
 Template.deployItem.helpers({
 	status: function() {
 		if("start" == this.type) {
@@ -7,6 +9,10 @@ Template.deployItem.helpers({
 		}
 	},
 	delay: function() {
-		return moment(this.createdAt).fromNow();
+		return moment(this.createdAt).from(now.get());
 	}
 });
+
+setInterval(function () {
+  now.set(new Date());
+}, 60000);
